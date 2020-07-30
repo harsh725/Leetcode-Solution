@@ -10,22 +10,22 @@
  */
 class Solution {
 public:
-    int getDecimalValue(ListNode* head) {
-     
-        
-        ListNode *temp=head;
-        if(temp==NULL)
-            return 0;
-        int sum=temp->val;
-        temp=temp->next;
-        while(temp)
-        {
-            sum=sum<<1;
-            if(temp->val==1)
-                sum++;
-            temp=temp->next;
-        }
-        return sum;
-        
-    }
+	int getDecimalValue(ListNode* head) {
+
+
+		ListNode *temp = head;
+		if (temp == NULL)
+			return 0;
+		int sum = temp->val;
+		temp = temp->next;
+		while (temp)
+		{
+			sum = sum << 1;
+			if (temp->val == 1)
+				sum++;
+			temp = temp->next;
+		}
+		return sum;
+
+	}
 };
